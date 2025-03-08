@@ -18,9 +18,7 @@ public class LoginSteps {
     HomePage homePage;
     LoginPage loginPage;
     MyAccountPage myAccountPage;
-
     List<HashMap<String, String>> dataMap; //Data driven
-
 
     @Given("the user navigates to Login page")
     public void user_navigate_to_login_page() {
@@ -29,7 +27,6 @@ public class LoginSteps {
         homePage.clickLogin();
         BaseClass.getLogger().info("Clicked on My Account and on Login");
     }
-
 
     @When("user enters email as {string} and password as {string}")
     public void user_enters_email_as_and_password_as(String email, String pwd) {
